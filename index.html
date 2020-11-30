@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="styles.css">
+    <title>expense-tracker</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+        <h1 class='bottom-margin'>Your Budget</h2>
+            <p class='bottom-margin'>NOV 2020</p>
+            <form id='input-salery'>
+                
+                <label id="income-input" for="income-input">Salery:</label>
+                <input type="text" name="icome" id="income" placeholder="salery">
+                <button id="submit-salery"><i class="fa fa-check fa-2x" aria-hidden="true"></i></button>
+                
+            </form>
+            
+            <h2 class='sal-header'>00000</h2>
+                <div class="attributes">
+
+                    <label >current Balance:</label>
+                    <span class='current-balance'>0</span>
+                    
+                    <label >spent:</label>
+                    <span class='typeofinput exp'>0</span>
+                    <label >Saved:</label>
+                    <span class='typeofinput saved'>0</span>
+                    <label >Invested:</label>
+                    <span class='typeofinput invested'>0</span>
+                </div>
+                
+    </div>
+    
+    <div class="right-container">
+        <h1 >Track Your Budget</h1>
+        <div class="list-exp">
+            
+
+                <label id="input-type" for="input-type">Choose a expense type:</label>
+                <select name="expenses" id="expense">
+                    <option value="Expense">Expense</option>
+                    <option value="Saving">Saving</option>
+                    <option value="Investment">Investment</option>
+                    
+                    
+                </select>
+            
+            <form id="add-expense" class="input-form">
+                
+                
+
+                <input type="text" name="date" id="date" placeholder="date">
+                
+
+                <input type="text" name="Description" id="Description" placeholder="Description">
+                
+                <input type="text" name="value" id="Value" placeholder="Value">
+               
+                <button><i class="fa fa-check fa-2x" aria-hidden="true"></i></button>
+            </form>
+            
+            <ul>
+                <li>
+                    <span class="date">date</span>
+                    <span class="expenditure">salery</span>
+                    <span class="amount">1,00,000<span>&#8377;</span></span>
+                </li>
+                <li>
+                    <span class="date">date</span>
+                    <span class="expenditure">Car EMI</span>
+                    <span class="amount">12,461<span>&#8377;</span></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="app.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+</body>
+</html>
